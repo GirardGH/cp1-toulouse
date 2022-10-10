@@ -26,7 +26,20 @@
 .desktop {
   margin: 80px 0 -5px 0;
 }
+.introduction{
+  display: flex;
+  flex-direction: column;
+}
 
+
+@media screen and (min-width: 700px) {
+  .introduction{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .skills {
   margin-top: -30px;
   border-radius: 12px;
@@ -43,6 +56,28 @@
   text-align: center;
   box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5);
 }
+
+@media screen and (min-width: 700px) {
+  
+  .skills {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+  }
+
+
+  
+}
+
+@media screen and (max-width: 700px) {
+
+  .skills {
+    display: flex;
+    flex-direction: column;
+  }
+
+}
+
 
 .column:first-child {
   border-bottom-left-radius: 0px;
@@ -72,6 +107,13 @@ img {
   max-width: 100%;
 }
 
+@media screen and (max-width: 700px){ 
+  #image-desktop {
+    display: none;
+  }
+}
+
+
 .projects a {
   color: #750ff7;
 }
@@ -79,4 +121,24 @@ img {
 p {
   padding-left: 15px;
   padding-right: 15px;
+}
+
+@media screen and (min-width: 700px) {
+
+  .menu {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    align-items: center;
+  }
+}
+
+.disabled {
+  opacity: 0.5;
+}
+
+.contents {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
